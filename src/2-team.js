@@ -22,11 +22,12 @@ class Team {
     constructor(name) {
         this.name = name
     }
-    get starters() {
-        return this.#starters
+    getStarters() {
+        return [...this.#starters]
+        // retrun this.#starters; this is returning a direct refernce
     }
-    get bench() {
-        return this.#bench
+    getBench() {
+        return [...this.#bench]
     }
     addBenchPlayer(player) {
         return this.#bench.push(player)
@@ -35,7 +36,8 @@ class Team {
         return this.#starters.length + this.#bench.length
     }
     moveToBench(name) {
-        let currentPlayer = this.starters.find((player) => player.name === name)
+        let currentPlayer = this.#starters.find((player) => player.name === name)
+        // find is looping through starters, parameters represent each player, if play.name passed through = aname in the players {} 
         if (!currentPlayer) {
             return false
         }
@@ -45,12 +47,17 @@ class Team {
         return true
     }
     moveToStarters(name) {
-
+        let currentPlayer = this.#bench.find((player) => player.name === name)
+        // find is looping through starters, parameters represent each player, if play.name passed through = aname in the players {} 
+        if (!currentPlayer) {
+            return false
+        }
+        let index = this.#bench.indexOf(currentPlayer)
+        this.#bench.splice(index, 1)
+        this.#starters.push(currentPlayer)
+        return true
     }
 }
-const player1 = new Player("LeBron James", "Forward", 23);
-const player2 = new Player("Stephen Curry", "Guard", 30);
-const player3 = new Player("Kevin Durant", "Forward", 35);
 const player4 = new Player("Anthony Davis", "Center", 3);
 
 const team = new Team("All Stars");
