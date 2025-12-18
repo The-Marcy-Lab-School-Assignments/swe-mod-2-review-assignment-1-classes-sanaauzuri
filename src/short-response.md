@@ -15,12 +15,18 @@ For example, a `Song` and a `MediaItem` have an inheritance relationship because
 
 ### Response 1
 
-1. Your response...
-2. Your response...
-3. Your response...
-4. Your response...
-5. Your response...
-6. Your response...
+`1.` A Car class and a Engine class are a composition relationship because a Car is composed of one or many engines.
+
+`2.` A Dog class and an Animal class are a inheritance relationship because a dog is a type of animal and inherits properties from the Animal class.
+
+`3.` A Classroom class and a Student class are a composition relationship because a classroom is composed of multiple students.
+
+`4.` A Rectangle class and a Shape class are a inheritance relationship because a Rectangle inherits properties from the Shape class
+
+`5.` A Computer class and a CPU class are a composition relationship because a Computer has/is composed of a CPU.
+
+`6.` A Manager class and an Employee class are a inheritance relationship because a Manager is a type of employee and inherits properties from the Employee class.
+
 
 ---
 
@@ -34,7 +40,7 @@ In your own words, explain what polymorphism means and why it is useful. Use the
 
 Your response...
 
----
+Polymorphism is 
 
 ## Question 3
 
