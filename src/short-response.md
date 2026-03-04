@@ -51,8 +51,8 @@ b) Give an example of when you would want to use a static property or method ins
 
 ### Response 3
 
-a) A `static property` is a property that is shared across all instances of a class, while an `instance property` is unique to each individual instance made from that class.
+a) A `static property` is a property that is shared across all `instances` of a class, while an `instance property` is unique to each individual instance made from that class.
 
 
-b) I would use a static property or method when I want all instances of a class to share or add to a value. For example, if all dogs attended the same doggy daycare, I could make the daycare name a static property.  While the instance properties would store each dog's unique details like name, owner, breed, etc. 
+b) I would use a `static property or method` when I want all `instances` of a class to share or add to a certain value. For example, if all dogs attended the same doggy daycare, I could make the daycare name a `static property`.  While the `instance properties` would store each dog's unique details like name, owner, breed, etc. 
 
