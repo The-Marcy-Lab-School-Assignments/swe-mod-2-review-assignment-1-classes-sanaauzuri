@@ -24,13 +24,13 @@ class Team {
     }
     getStarters() {
         return [...this.#starters]
-        // retrun this.#starters; this is returning a direct refernce
+        // return this.#starters; this is returning a direct reference
     }
     getBench() {
         return [...this.#bench]
     }
     addBenchPlayer(player) {
-        return this.#bench.push(player)
+        this.#bench.push(player)
     }
     getPlayerCount() {
         return this.#starters.length + this.#bench.length
