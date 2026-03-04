@@ -15,12 +15,18 @@ For example, a `Song` and a `MediaItem` have an inheritance relationship because
 
 ### Response 1
 
-1. Your response...
-2. Your response...
-3. Your response...
-4. Your response...
-5. Your response...
-6. Your response...
+`1.` A `Car` class and a `Engine` class have a composition relationship because a Car is composed of one or more engines.
+
+`2.` A `Dog` class and an `Animal` class have an inheritance relationship because a dog is a type of animal and inherits properties from the `Animal` class.
+
+`3.` A `Classroom` class and a `Student` class have a composition relationship because a classroom is composed of multiple students.
+
+`4.` A `Rectangle` class and a `Shape` class have an inheritance relationship because a rectangle is a type of shape and inherits properties from the `Shape` class.
+
+`5.` A `Computer` class and a `CPU` class have a composition relationship because a Computer is composed of a CPU.
+
+`6.` A `Manager` class and an `Employee` class have an inheritance relationship because a manager is a type of employee and inherits properties from the `Employee` class.
+
 
 ---
 
@@ -32,9 +38,8 @@ In your own words, explain what polymorphism means and why it is useful. Use the
 
 ### Response 2
 
-Your response...
+Polymorphism is when an `instance method` used on a `parent` class can take on different functionality/behavior in its `child` classes. Polymorphism is beneficial because it allows for extensible code that can be reused and customized across multiple classes. For instance, the `MediaItem` parent class has an `play()` method that returns `"Playing: {title}"`.  This method is also reused amongst its child classes.  Its child class `Song` overrides this method to return `${super.play()} by ${this.artist}`. Polymorphism allows us to use this instance method across these classes, even though the instance methods from each class have a different return value.
 
----
 
 ## Question 3
 
@@ -46,6 +51,7 @@ b) Give an example of when you would want to use a static property or method ins
 
 ### Response 3
 
-a) Your response...
+a) A `static property` is a property that is shared across all instances of a class, while an `instance property` is unique to each individual instance made from that class.
 
-b) Your response...
+
+b) I would use a static property or method when I want all instances of a class to share or add to a value. For example, if all dogs attended the same doggy daycare, I could make the daycare name a static property.  While the instance properties would store each dog's unique details like name, owner, breed, etc. 
